@@ -99,6 +99,8 @@ consul_template::watch { 'common':
 | `version`              | `0.19.4`                | Version of consul-template to install via download |
 | `install_method`       | `url`                   | When set to 'url', consul-template is downloaded and installed from source. If set to 'package', its installed using the system package manager. |
 | `os`                   | Read from facter        |
+| `http_proxy`           | `undef`                 | HTTP Proxy |
+| `https_proxy`          | `undef`                 | HTTPS Proxy |
 | `download_url`         | `undef`                 | URL to download consul-template from (when `install_method` is set to 'url') |
 | `download_url_base `   | `https://releases.hashicorp.com/consul-template` | Base URL to download consul-template from (when `install_method` is set to 'url') |
 | `download_extension`   | `zip`                   | File extension of consul-template binary to be downloaded (when `install_method` is set to 'url') |

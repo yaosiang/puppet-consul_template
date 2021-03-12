@@ -58,6 +58,8 @@ class consul_template (
   String $config_dir                         = '/etc/consul-template',
   String $config_mode                        = '0660',
   String $data_dir                           = '',
+  Optional $http_proxy                       = undef,
+  Optional $https_proxy                      = undef,
   Optional[Stdlib::HTTPSUrl] $download_url   = undef,
   Stdlib::HTTPSUrl $download_url_base        = 'https://releases.hashicorp.com/consul-template',
   String $download_extension                 = 'zip',
