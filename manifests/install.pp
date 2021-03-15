@@ -1,8 +1,8 @@
 # == Class consul_template::intall
 #
 class consul_template::install(
-  Optional $http_proxy  = $consul_template::http_proxy,
-  Optional $https_proxy = $consul_template::https_proxy,
+  Optional[String] $http_proxy  = $consul_template::http_proxy,
+  Optional[String] $https_proxy = $consul_template::https_proxy,
 ) {
 
   if ! empty($consul_template::data_dir) {
